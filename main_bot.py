@@ -51,6 +51,3 @@ def main():
 
 #start
 main()
-
-boioio
-d
