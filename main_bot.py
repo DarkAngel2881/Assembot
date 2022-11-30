@@ -12,7 +12,7 @@ print("Bot initialized...")
 #functions to make the bot reply to the commands (start the bot, ask for help, make an assembly request)
 def start_command(update, context):
     update.message.reply_text('Hello!\nI\'m assembot and I\'m able to send an assembly request to one or more teachers and then directly send it to the school office to approve it!')
-
+    
 
 def help_command(update, context):
     update.message.reply_text('If have any questions or you have no idea how to use it ask to @Assistance')
@@ -20,7 +20,7 @@ def help_command(update, context):
 
 def request_command(update, context):
     update.message.reply_text('You are (name of the user), rapresentant of (user\'s class).\nThis is your time table of the week:\n(image of the time table of the class)\nWich are the teacher/s you need to ask for the assembly?\n(Enter the full name of the teacher):')
-
+    update.message.reply_photo("https://prnt.sc/K-XyxMMGj3xU")
 
 #function to make the bot reply to any user's text messages based on the filters created in 'Responses'
 def handle_message(update, context):
