@@ -20,7 +20,7 @@ def help_command(update, context):
 #//
 def request_command(update, context):
     update.message.reply_text(f'You are {update.message.from_user.first_name + " " + update.message.from_user.last_name}, rapresentant of (user\'s class).\nThis is your time table of the week:\n(image of the time table of the class)\nWich are the teacher/s you need to ask for the assembly?\n(Enter the full name of the teacher):')
-    update.message.reply_photo(open("AC.png", 'rb'))
+    update.message.reply_photo(open("Image.jpg", 'rb'))
 
 #function to make the bot reply to any user's text messages based on the filters created in 'Responses'
 def handle_message(update, context):
